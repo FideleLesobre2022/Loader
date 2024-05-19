@@ -93,7 +93,7 @@ body
     width: 90px;
     position: relative;
     vertical-align: middle;
-    animation: spin 3s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 .loader-quart-4{
@@ -108,7 +108,7 @@ body
     border: #ffffff00 5px solid;
     display: inline-block;
     position: absolute;
-    animation: spin 3s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 .loader-quart-5
@@ -128,7 +128,7 @@ body
     border: #ffffff00 5px solid;
     display: inline-block;
     position: absolute;
-    animation: spin 3s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 .loader-quart-6
@@ -142,12 +142,54 @@ body
 }
 
 
+/* Loading bar */ 
+.section-loading-bar
+{
+    background-color: violet;
+}
 
+.loading-bar
+{
+    background-color: #fff;
+    height: 60px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.first
+{
+    animation: loading-bar 1s linear infinite;
+}
+.second
+{
+    animation: loading-bar 1s linear -.20s infinite;
+}
 
+.third
+{
+    animation: loading-bar 1s linear -.40s infinite;
+}
 
+.fourth
+{
+    animation: loading-bar 1s linear -.80s infinite;
+}
 
-
+@keyframes loading-bar {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
 
 @keyframes spin{
     0%{
